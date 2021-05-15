@@ -10,7 +10,7 @@ date: April 18, 2021
 ---
 
 <figure style="width: 30%" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/vinay-hegde1.jpg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/nagendra-jayaram.jpg" alt="">
 </figure> 
 
 I am Nagendra
