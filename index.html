@@ -1,8 +1,237 @@
----
-layout: default
-title: Nagendra Jayaram
----
-<div class="blurb">
-	<h1>Hi there, I'm Nagendra Jayaram!</h1>
-	<p>I'm a O365 Support Engineer having 15+ years of experience in the IT industry. <a href="/about">Read more about my profesional experiences...</a></p>
-</div><!-- /.blurb -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nagendra Jayaram — Technical Advisor</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1117;
+  --panel:rgba(255,255,255,0.03);
+  --muted:rgba(255,255,255,0.65);
+  --accent1:#7c5cff;
+  --accent2:#00d4ff;
+  --radius:12px;
+  --maxw:1100px;
+  --linkedin:#0A66C2;
+  --email:#FF8A00;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  background:
+    radial-gradient(800px 400px at 12% 10%, rgba(124,92,255,0.06), transparent 12%),
+    radial-gradient(700px 300px at 92% 90%, rgba(0,212,255,0.04), transparent 10%),
+    var(--bg);
+  color:#e9f2ff}
+.container{max-width:var(--maxw);margin:36px auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:20px}
+.brand{display:flex;gap:14px;align-items:center;color:inherit;text-decoration:none}
+.avatar{width:72px;height:72px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#051025;font-weight:700}
+.name h1{margin:0;font-size:18px}
+.name p{margin:0;color:var(--muted);font-size:13px}
+.actions{display:flex;align-items:center;gap:14px}
+.badge{width:64px;height:64px;border-radius:12px;background:#fff;padding:6px;object-fit:contain;box-shadow:0 3px 8px rgba(0,0,0,0.35);transition:transform .18s}
+.badge:hover{transform:scale(1.06)}
+.has-tooltip{position:relative}
+.has-tooltip[data-tooltip]:hover::after{
+  content:attr(data-tooltip);
+  position:absolute;
+  bottom:calc(100% + 8px);
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(0,0,0,0.75);
+  color:#fff;
+  padding:6px 8px;border-radius:6px;font-size:12px;white-space:nowrap;z-index:30;
+  box-shadow:0 6px 18px rgba(0,0,0,0.4)
+}
+main{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+@media (max-width:980px){main{grid-template-columns:1fr}}
+.panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:16px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 8px 30px rgba(2,6,23,0.55)}
+.muted{color:var(--muted)} .just{ text-align:justify; text-justify:inter-word }
+.skill-list{display:flex;flex-direction:column;gap:14px}
+.skill-card{background:var(--panel);padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.skill-title{font-size:14px;margin:0 0 6px}
+.meter{height:8px;background:rgba(255,255,255,0.08);border-radius:8px;overflow:hidden}
+.meter > i{display:block;height:100%;width:0%;border-radius:8px;background:linear-gradient(90deg,var(--accent1),var(--accent2));transition:width .9s}
+.skill-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{background:rgba(255,255,255,0.02);padding:4px 6px;border-radius:6px;font-size:12px}
+.cert-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:10px}
+.cert{display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:var(--panel);border:1px solid rgba(255,255,255,0.02);min-width:220px;flex:1 1 220px;text-decoration:none;color:inherit}
+.cert img{width:96px;height:96px;object-fit:contain;border-radius:10px;background:#fff;padding:8px;transition:transform .18s}
+.cert img:hover{transform:scale(1.05)}
+.footer{display:flex;justify-content:center;color:var(--muted);font-size:13px;margin-top:20px}
+.footer a{color:var(--muted);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.footer a:hover{color:#fff;text-decoration:underline}
+.icon-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;text-decoration:none;color:#fff;font-weight:600;font-size:14px}
+.icon{width:18px;height:18px;vertical-align:middle;display:inline-block}
+.linkedin-btn{background:var(--linkedin)}
+.email-btn{background:linear-gradient(90deg,var(--email),#ffb66a)}
+.edu-entry{margin-bottom:8px}
+.icon-btn img,.footer a img{width:18px;height:18px;display:block}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <!-- Logo clickable, links to LinkedIn -->
+    <a class="brand" href="https://www.linkedin.com/in/nagendrajayaram/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+      <div class="avatar">NJ</div>
+      <div class="name">
+        <h1>Nagendra Jayaram</h1>
+        <p>Technical Advisor — Escalation Services (Microsoft) · 18+ years</p>
+      </div>
+    </a>
+
+    <div class="actions">
+      <a class="has-tooltip" data-tooltip="View certification" title="View AI-900 certification" href="https://www.credly.com/org/microsoft-certification/badge/microsoft-certified-azure-ai-fundamentals" target="_blank" rel="noopener">
+        <img class="badge" src="https://images.credly.com/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" alt="AI-900">
+      </a>
+      <a class="has-tooltip" data-tooltip="View certification" title="View ITIL Foundation certification" href="https://www.peoplecert.org/" target="_blank" rel="noopener">
+        <img class="badge" src="https://images.credly.com/images/8c86cbbe-8aa8-432b-a537-95f95ef35f6c/image.png" alt="ITIL Foundation">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left column -->
+    <div>
+      <section class="panel">
+        <h2>Professional Summary</h2>
+        <p class="mut just">
+          Seasoned IT professional with 18+ years of experience in enterprise technical support, customer success,
+          and escalation management, including 6+ years at Microsoft. Proven expertise in managing enterprise
+          customer portfolios, driving SaaS service delivery, and ensuring SLA compliance. Skilled in customer
+          health management, NPS/CSAT improvement, and fostering executive relationships to ensure long-term success.
+          Recognized for resolving escalations, developing remediation plans, and enabling cross-functional collaboration
+          across sales, consulting, and product teams. Recently expanded expertise to Microsoft Copilot solutions,
+          integrating AI-driven automation to enhance productivity and customer adoption.
+        </p>
+      </section>
+
+      <section class="panel" style="margin-top:16px">
+        <h2>Experience Summary</h2>
+        <ul class="mut" style="margin-left:18px">
+          <li>Owned and managed enterprise customer portfolios as a trusted technical advisor and escalation owner.</li>
+          <li>Drove end-to-end SaaS service delivery success, balancing customer expectations with delivery outcomes and ensuring SLA compliance.</li>
+          <li>Led customer escalations — created and executed remediation plans, coordinated cross-functional teams, and ensured closure.</li>
+          <li>Partnered with Sales, Pre-Sales and Renewals to identify upsell/cross-sell opportunities and deliver change requests.</li>
+          <li>Conducted QBRs and Executive Service Reviews; tracked SLA, NPS and retention metrics.</li>
+          <li>Designed and implemented automation solutions (PowerShell, Power Automate, Copilot workflows) to accelerate resolution and improve efficiency.</li>
+          <li>Mentored and coached support engineers, fostering continuous learning and improved operational readiness.</li>
+          <li>Directed onshore/offshore teams and acted as SME for Tier 2/3 application support in leadership roles.</li>
+        </ul>
+      </section>
+
+      <section class="panel" style="margin-top:16px">
+        <h2>Achievements & Awards</h2>
+        <ul class="mut">
+          <li>Microsoft Spotlight Award – Performance — Mar 2024</li>
+          <li>Pulse Award – Culture — Sep 2022</li>
+          <li>Microsoft Spotlight Award – Performance — Sep 2021</li>
+          <li>Architects of Excellence (ACE) — Individual Award — Mar 2019</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Right column -->
+    <aside>
+      <div class="panel">
+        <h3>Contact</h3>
+        <div style="font-weight:700">Nagendra Jayaram</div>
+        <div class="muted">Technical Advisor — Escalation Services, Microsoft</div>
+
+        <div style="margin-top:12px">
+          <a class="icon-btn email-btn" href="mailto:nagendra.jna@outlook.com" title="Send email to nagendra.jna@outlook.com">
+            <img class="icon" src="https://img.icons8.com/ios-filled/ffffff/18/new-post.png" alt="Email"> nagendra.jna@outlook.com
+          </a>
+        </div>
+
+        <div style="margin-top:12px">
+          <a class="icon-btn linkedin-btn" href="https://www.linkedin.com/in/nagendrajayaram/" target="_blank" rel="noopener" title="View LinkedIn: nagendrajayaram">
+            <img class="icon" src="https://img.icons8.com/ios-filled/ffffff/18/linkedin.png" alt="LinkedIn"> Nagendra Jayaram
+          </a>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:12px">
+        <h4>Education</h4>
+        <div class="muted">
+          <div class="edu-entry"><strong>MSc</strong> — Manipal University (2010)</div>
+          <div class="edu-entry"><strong>BE, Electronics & Comm.</strong> — VTU (2006)</div>
+          <div class="edu-entry"><strong>Diploma, Electronics & Comm.</strong> — MEI Polytechnic (2003)</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:12px">
+        <h4>Skills</h4>
+        <div class="skill-list">
+          <div class="skill-card">
+            <div class="skill-title">Infrastructure & Platforms</div>
+            <div class="meter" data-value="88"><i></i></div>
+            <div class="skill-tags">
+              <span class="tag">Microsoft 365</span><span class="tag">SharePoint</span><span class="tag">OneDrive</span><span class="tag">Azure</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-title">Automation & Copilot</div>
+            <div class="meter" data-value="90"><i></i></div>
+            <div class="skill-tags">
+              <span class="tag">PowerShell</span><span class="tag">Power Automate</span><span class="tag">Copilot Studio</span><span class="tag">Power Apps</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-title">Customer Success & Ops</div>
+            <div class="meter" data-value="92"><i></i></div>
+            <div class="skill-tags">
+              <span class="tag">SLA Compliance</span><span class="tag">NPS/CSAT</span><span class="tag">QBRs</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-title">Escalations & Leadership</div>
+            <div class="meter" data-value="94"><i></i></div>
+            <div class="skill-tags">
+              <span class="tag">Remediation Planning</span><span class="tag">Incident Mgmt</span><span class="tag">Onshore/Offshore Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="panel" style="margin-top:18px">
+    <h2>Certifications</h2>
+    <div class="cert-row">
+      <a class="cert has-tooltip" data-tooltip="View certification" title="AI-900: Azure AI Fundamentals" href="https://www.credly.com/org/microsoft-certification/badge/microsoft-certified-azure-ai-fundamentals" target="_blank" rel="noopener">
+        <img src="https://images.credly.com/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" alt="AI-900">
+        <div><strong>AI-900</strong><div class="muted">Azure AI Fundamentals</div></div>
+      </a>
+      <a class="cert has-tooltip" data-tooltip="View certification" title="AZ-900: Azure Fundamentals" href="https://www.credly.com/org/microsoft-certification/badge/microsoft-certified-azure-fundamentals" target="_blank" rel="noopener">
+        <img src="https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" alt="AZ-900">
+        <div><strong>AZ-900</strong><div class="muted">Azure Fundamentals</div></div>
+      </a>
+      <a class="cert has-tooltip" data-tooltip="View certification" title="Azure Administrator Associate" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/" target="_blank" rel="noopener">
+        <img src="https://images.credly.com/size/110x110/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png" alt="Azure Admin">
+        <div><strong>Azure Administrator</strong><div class="muted">Associate</div></div>
+      </a>
+      <a class="cert has-tooltip" data-tooltip="View certification" title="ITIL Foundation" href="https://www.peoplecert.org/" target="_blank" rel="noopener">
+        <img src="https://images.credly.com/images/8c86cbbe-8aa8-432b-a537-95f95ef35f6c/image.png" alt="ITIL">
+        <div><strong>ITIL Foundation</strong><div class="muted">ITIL 4 Foundation</div></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer with LinkedIn link + icon -->
+  <div class="footer">
+    <div><a href="https://www.linkedin.com/in/nagendrajayaram/" target="_blank" rel="noopener">
+      <img src="https://img.icons8.com/ios-filled/ffffff/18/linkedin.png" alt="LinkedIn"> Nagendra Jayaram
+    </a></div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.meter').forEach((m,i)=>{const v=+m.dataset.value||80;m.querySelector('i').style.width=v+'%';});
+</script>
+</body>
+</html>
